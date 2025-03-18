@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/ubuntu');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: var(--comum);
+}
+:root {
+    /* Cores no documento */
+    --bege: #EEDDAA;
+    --azul1: #3366BB;
+    --azul2: #2255AA;
+    --azul3: #2255CC;
+
+    /* Fontes no documennto */
+    --comum: 'Ubuntu', sans-serif;
+}
+body {
+    overflow: hidden;
+    background-color:  var(--bege);
+}
+table, tr, td {
+    border: none;
+    color: var(--azul1);
+}
+.header td{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.display {
+    background-color: var(--bege);
+}
+ul {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+a:visited {
+    color: var(--azul3);
+}
+address a{
+    color: var(--azul2);
+}
+.list {
+    padding: 10%;
+}
+.image {
+    padding: 8%;
+}

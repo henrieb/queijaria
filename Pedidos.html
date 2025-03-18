@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos</title>
+        <link rel="stylesheet" href="src/css/stylepedidos.css">
+    </head>
+    <body>
+        <header class="header">
+            <img class="imgLogo" src="src/img/CanastraoLogoTopo.png" alt>
+            <address class="ender">
+                Av. Gorgonzola, 235<br>
+                Tel: (21) 91235-1235<br>
+                <a
+                    href="contato@canastrao.com.br">contato@canastrao.com.br</a>
+            </address>
+        </header>
+        <main class="apres">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Apresentação</a></li>
+                    <li><a href="Queijos.html">Queijos</a></li>
+                    <li><a href="Harmonizacao.html">Harmonização</a></li>
+                    <li><a href="Pedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+            <form class="divCompras" action>
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <div>
+                        <label class="colPri" for="nome">Nome: </label>
+                        <input name="nome" class="inpGrande" type="text">
+                    </div>
+                    <div class="divLinha"></div>
+                    <div>
+                        <label class="colPri" for="email">Email: </label>
+                        <input name="email" class="inpGrande" type="email">
+                    </div>
+                    <div class="divLinha"></div>
+                    <fieldset class="fsDir">
+                        <legend>Gênero:</legend>
+                        <input name="masc" type="radio"> <label for="masc">Mas</label>
+                        <input name="femi" type="radio"> <label for="femi">Fem</label>
+                        <input name="outro" type="radio"> <label for="outro">Outro</label>
+                    </fieldset>
+                    <div>
+                        <label class="colPri" for="ender">Endereço: </label>
+                        <textarea name="ender" class="impEnder"></textarea>
+                    </div>
+                    <div class="divLinha"></div>
+                    <fieldset class="fsDir">
+                        <legend>Nascimento:</legend>
+                        <input name="dia" class="numDD" type="number" maxlength="2"> /
+                        <input name="mes" class="numDD" type="number" maxlength="2"> /
+                        <input name="ano" class="numQD" type="number" maxlength="4">
+                    </fieldset>
+                    <div>
+                        <label class="colPri" for="telefone">Telefone: </label>
+                        <input name="telefone" class="impTelef" type="tel">
+                    </div>
+                    <div class="divLinha"></div>
+                    <div>
+                        <label class="colPri" for="cel">Celular: </label>
+                        <input name="cel" class="impTelef" type="tel">
+                    </div>
+
+                </fieldset>
+                <div class="divLinha"></div>
+                <fieldset>
+                    <legend>Seleção de Produtos e Pagamento</legend>
+                    <textarea readonly class="listaCompras" name id></textarea>
+                    <select class="select">
+                        <option value>-----</option>
+                        <optgroup label="Nacionais">
+                            <option value="canastra">Canastra (500g)</option>
+                            <option value="minas">Queijo Minas (400g)</option>
+                            <option value="coalho">Queijo Coalho (500g)</option>
+                        </optgroup>
+                        <optgroup label="Internacionais">
+                            <option value="gorgonzola">Gorgonzola (200g)</option>
+                            <option value="brie">Queijo Brie (200g)</option>
+                        </optgroup>
+                    </select>
+                    <button class="botoes">Comprar</button>
+                    <br>
+                    <div class="divLinha"></div>
+                    <fieldset class="fsEsq">
+                        <legend>Cartão</legend>
+                        <div>
+                            <span>Bandeira:</span>
+                            <input name="visa" type="radio"> <label for="visa">Visa</label>
+                            <input name="master" type="radio"> <label for="master">Master</label>
+                            <input name="elo" type="radio"> <label for="elo">Elo</label>
+                        </div><br>
+                        <div>
+                            <label for>Validade: </label>
+                            <input name="vmes" class="numDD" type="number"
+                                maxlength="2"> /
+                            <input name="vano" class="numDD" type="number"
+                                maxlength="2">
+                        </div><br>
+
+                        <div>
+                            <label for="numcartao">Número: </label>
+                            <input name="numcartao" class="impNCC" type="number">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="elemDir" style="margin-top: 10px;">
+                    <span>Valor R$ </span>
+                    <input readonly class="impMedio" type="text">
+                </div>  
+                </fieldset>
+                <div class="elemDir">
+                <button class="botoes">Enviar</button>
+                <button class="botoes">Limpar</button>
+            </div>
+            </form>
+        </main>
+    </body>
+</html>

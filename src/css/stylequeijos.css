@@ -1,0 +1,151 @@
+@import url('https://fonts.cdnfonts.com/css/ubuntu');
+@import url('https://fonts.cdnfonts.com/css/stoke');
+        
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root {
+    /* Cores no documento */
+    --bege: #EEDDAA;
+    --azul1: #3366BB;
+    --azul2: #2255AA;
+    --azul3: #2255CC;
+
+    /* Fontes no documento */
+    --comum: 'Ubuntu', sans-serif;
+    --alt: 'Stoke', sans-serif;
+}
+body {
+    overflow: hidden;
+    background-color:  var(--bege);
+    color: var(--azul1);
+    font-size: 16px;
+    height: 100dvh;
+}
+a {
+    color: var(--azul2);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--azul3);
+}
+ol, ul {
+    line-height: 200%;
+    text-align: left;
+}
+section {
+    display: block;
+    width: 100%;
+    float: right;
+}
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+.header{
+    display: block;
+    margin-bottom: 1px;
+    padding: 0.5rem 3%;
+}
+.ender  {
+    float: right;
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: var(--comum);
+}
+.imgLogo {
+    border-bottom: 4px solid var(--azul1);
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+.apres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    height: 70%;
+    text-align: center;
+    font-size: 16px;
+}
+nav ul {
+    color: var(--azul1);
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: disc;
+}
+nav ul a {
+    font-family: var(--alt);
+}
+address{
+    color: var(--azul2);
+}
+.titulo {
+    text-align: center;
+}
+.listaQueijo {
+    width: 440px;
+    color: var(--azul1);
+    background-color: #ffffbb;
+    padding: 10px;
+    border: 2px solid var(--azul1);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: var(--alt);
+}
+h4 {
+    font-size: 14px;
+}
+h2 {
+    font-family: var(--alt);
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.listaQueijo li {
+    margin-left: 30px;
+}
+.listaQueijo span {
+    text-decoration: underline;
+}
+dd {
+    margin-left: 45px;
+}
+.tabQueijo {
+    border-collapse: collapse;
+    margin-top: 6px;
+    font-size: 15px;
+    background-color: #ffffbb;
+    color: #114499;
+    font-family: var(--comum);
+}
+.tabQueijo th {
+    border: 2px solid #000;
+    padding: 6px 12px 6px 12px;
+}
+.tabQueijo td {
+    border: 2px solid #000;
+    padding: 6px 12px 6px 12px;
+}
+.linTH {
+    color: #eeee00;
+    background-color: #887733;
+    vertical-align: middle;
+    text-align: center;
+}
+.colTH {
+    color: #222;
+    background-color: #ccbb88;
+    text-align: left;
+}
+.preco {
+    color: #cc0000;
+}
+.imgQueijo {
+    width: 60px;
+    height: 44px;
+}
