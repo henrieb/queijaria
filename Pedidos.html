@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pedidos</title>
         <link rel="stylesheet" href="src/css/stylepedidos.css">
+        <script src="src/js/script.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -26,6 +27,7 @@
                 </ul>
             </nav>
             <form class="divCompras" action>
+                <h4>Compras</h4><br>
                 <fieldset>
                     <legend>Identificação</legend>
                     <div>
@@ -69,7 +71,7 @@
                 <div class="divLinha"></div>
                 <fieldset>
                     <legend>Seleção de Produtos e Pagamento</legend>
-                    <textarea readonly class="listaCompras" name id></textarea>
+                    <textarea readonly class="listaCompras" name id="listaCompras"></textarea>
                     <select class="select">
                         <option value>-----</option>
                         <optgroup label="Nacionais">
@@ -82,7 +84,7 @@
                             <option value="brie">Queijo Brie (200g)</option>
                         </optgroup>
                     </select>
-                    <button class="botoes">Comprar</button>
+                    <button type="button" class="botoes" onclick="incluirProduto()">Incluir</button>
                     <br>
                     <div class="divLinha"></div>
                     <fieldset class="fsEsq">
@@ -105,15 +107,20 @@
                             <label for="numcartao">Número: </label>
                             <input name="numcartao" class="impNCC" type="number">
                         </div>
+                        <br>
+                        <div>
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" maxlength="11" onblur="modCPF()">
+                        </div>
                     </fieldset>
                 </div>
                 <div class="elemDir" style="margin-top: 10px;">
-                    <span>Valor R$ </span>
-                    <input readonly class="impMedio" type="text">
+                    <label for="valortotal">Valor R$ </span>
+                    <input readonly id="valortotal" value="0.00" class="impMedio" type="text">
                 </div>  
                 </fieldset>
                 <div class="elemDir">
-                <button class="botoes">Enviar</button>
+                <button class="botoes">Comprar</button>
                 <button class="botoes">Limpar</button>
             </div>
             </form>

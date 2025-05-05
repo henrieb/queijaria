@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Queijos</title>
         <link rel="stylesheet" href="src/css/stylequeijos.css">
+        <script src="src/js/script.js" defer></script>
+        <style>
+            .imgQueijo {
+                width: 100px;
+                height: 44px;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
@@ -27,48 +34,48 @@
             </nav>
             <table class="tabQueijo">
                 <tr>
-                    <th class="linTH" colspan="5">Queijos</th>
+                    <th class="linTH" colspan="3">Queijos</th>
                 </tr>
                 <tr>
                     <th class="linTH">Procedência</th>
                     <th class="linTH">Tipo</th>
-                    <th class="linTH">Imagem</th>
-                    <th class="linTH">Peso</th>
-                    <th class="linTH">Preço</th>
+                    <th class="linTH">Descrição</th>
+                    <!-- <th class="linTH">Peso</th>
+                    <th class="linTH">Preço</th> -->
                 </tr>
                 <tr>
                     <th class="colTH" rowspan="3">
                         Nacional
                     </th>
-                    <th> Canastra </th>
-                    <th> <img class="imgQueijo" src="src/img/QueijoCanastra.jpg" alt></th>
-                    <th> 500g </th>
-                    <th class="preco"> R$ 70.00 </th>
+                    <th><a target="_self" href="javascript: showcheese(0)" onclick="showchesse(0)"> Canastra </a></th>
+                    <th rowspan="5" id="descric"><img class="imgQueijo" src="src/img/vazio_150.png"></th>
+                    <!-- <th> 500g </th>
+                    <th class="preco"> R$ 70.00 </th> -->
                 </tr>
                 <tr>
-                    <th>Minas</th>
-                    <th><img class="imgQueijo" src="src/img/QueijoMinas.jpg" alt=""></th>
-                    <th>400g</th>
-                    <th class="preco">R$ 23.00</th>
+                    <th><a target="_self" href="javascript: showcheese(1)" onclick="showchesse(1)"> Minas </a></th>
+                    <!-- <th><img class="imgQueijo" src="src/img/QueijoMinas.jpg" alt=""></th> -->
+                    <!-- <th>400g</th>
+                    <th class="preco">R$ 23.00</th> -->
                 </tr>
                 <tr>
-                    <th>Coalho</th>
-                    <th><img class="imgQueijo" src="src/img/QueijoCoalho.jpg" alt=""></th>
-                    <th>500g</th>
-                    <th class="preco">R$ 40.00</th>
+                    <th><a target="_self" href="javascript: showcheese(2)" onclick="showchesse(2)"> Coalho </a></th>
+                    <!-- <th><img class="imgQueijo" src="src/img/QueijoCoalho.jpg" alt=""></th> -->
+                    <!-- <th>500g</th>
+                    <th class="preco">R$ 40.00</th> -->
                 </tr>
                 <tr>
                     <th class="colTH" rowspan="2">Internacionais</th>
-                    <th>Gorgonzola</th>
-                    <th><img class="imgQueijo" src="src/img/QueijoGorgonzola.jpg" alt=""></th>
-                    <th>200g</th>
-                    <th class="preco">R$ 20.00</th>
+                    <th><a target="_self" href="javascript: showcheese(3)" onclick="showchesse(3)"> Gorgonzola </a></th>
+                    <!-- <th><img class="imgQueijo" src="src/img/QueijoGorgonzola.jpg" alt=""></th> -->
+                    <!-- <th>200g</th>
+                    <th class="preco">R$ 20.00</th> -->
                 </tr>
                 <tr>
-                    <th>Brie</th>
-                    <th><img class="imgQueijo" src="src/img/QueijoBrie.jpg" alt=""></th>
-                    <th>200g</th>
-                    <th class="preco">R$ 30.00</th>
+                    <th><a target="_self" href="javascript: showcheese(4)" onclick="showchesse(4)"> Brie </a></th>
+                    <!-- <th><img class="imgQueijo" src="src/img/QueijoBrie.jpg" alt=""></th> -->
+                    <!-- <th>200g</th>
+                    <th class="preco">R$ 30.00</th> -->
                 </tr>
             </table>
         </main>
